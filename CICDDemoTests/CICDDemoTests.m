@@ -7,16 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface CICDDemoTests : XCTestCase
-
+{
+    ViewController *viewController;
+}
 @end
 
 @implementation CICDDemoTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    viewController = [[ViewController alloc]init];
 }
 
 - (void)tearDown {
@@ -34,6 +37,10 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testAdditionLogic{
+    XCTAssert([viewController addNumbers:5 with:-7]>0,"Addition result should be positive");
 }
 
 @end

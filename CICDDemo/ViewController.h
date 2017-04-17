@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (int) addNumbers:(int) num1 with:(int)num2;
 
 @end
 

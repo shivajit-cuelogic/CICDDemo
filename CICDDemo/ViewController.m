@@ -25,5 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (int) addNumbers:(int) num1 with:(int)num2{
+    return num1 + num2;
+}
+
 
 @end
