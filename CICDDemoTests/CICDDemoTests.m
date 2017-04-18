@@ -40,7 +40,7 @@
 }
 
 - (void)testAdditionLogic{
-    XCTAssert([viewController addNumbers:5 with:-7]>0,"Addition result should be positive number.");
+    XCTAssert([viewController addNumbers:5 with:-7]>0,"Addition result should be positive number");
 }
 
 @end
